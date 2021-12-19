@@ -1,13 +1,3 @@
-from rest_framework import viewsets
-# from rest_framework import permissions
+from django.shortcuts import render
 
-from moviedb.models import Movie
-from moviedb.serializers import MovieSerializer
-
-
-class MovieViewSet(viewsets.ModelViewSet):
-    """
-    API endpoint for movies.
-    """
-    queryset = Movie.objects.all()
-    serializer_class = MovieSerializer
+ # Create your views here.

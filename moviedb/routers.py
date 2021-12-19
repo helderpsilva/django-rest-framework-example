@@ -1,5 +1,5 @@
 from rest_framework import routers
-from moviedb import views
+from moviedb import viewsets
 
 router = routers.DefaultRouter()
-router.register(r'movie', views.MovieViewSet, basename='movie')
+router.register(r'movie', viewsets.MovieViewSet, basename='movie')
