@@ -13,12 +13,13 @@ class MovieTests(APITestCase):
         """
         Ensure we can add a new movie.
         """
+
         data = {
             "title": "Filme 01",
             "budget":100000,
             "homepage":"https://www.google.com",
             "description": "Descrição para o filme 01",
-            "release_date": "01-01-2021",
+            "release_date": "2021-01-01",
             "runtime": 120
             }
 
