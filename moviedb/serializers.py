@@ -20,13 +20,10 @@ class MovieSerializer(serializers.ModelSerializer):
 
 
 class ActorSerializer(serializers.ModelSerializer):
-
-    movies = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
-
     class Meta:
         ordering = ["id"]
         model = Actor
-        fields = ("first_name", "last_name", "age", "email", "movies")
+        fields = ("first_name", "last_name", "age", "email")
 
 
 class CastSerializer(serializers.ModelSerializer):
